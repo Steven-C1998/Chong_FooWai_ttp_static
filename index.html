@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TTP Code Challenge 2</title>
 </head>
-<body>
+<body onload="clock()";>
 
 <div>
   <h1 style="display:inline;">My name is Foo Wai Chong and my favorite hobby is playing FPS games with friends. </h1> 
@@ -14,7 +14,6 @@
 </div>
   
 <script type="text/javascript"> 
-clock();
 setInterval(clock, 500); //calls function clock every 500ms to update the time  
 function clock(){ //creates the time string literal
   let currentTime = new Date(); //creates Date object
