@@ -10,13 +10,13 @@
     <h1>My name is Foo Wai Chong and my favorite hobby is playing FPS games with friends.</h1>
     <div id='time'></div>
     <script type="text/javascript"> 
-    setInterval(clock, 1000); //interval in milliseconds
-    function clock(){
-    let currentTime = new Date();
+    setInterval(clock, 1000); //calls function clock every 1000ms to update the time
+    function clock(){ //creates the clock string literal
+    let currentTime = new Date(); //creates Date object
     let hour = currentTime.getHours();
     let minutes = currentTime.getMinutes();
     let seconds = currentTime.getSeconds();
-    night_day = null;
+    let night_day = null;
     if (hour == 0){
         hour = 12;
         night_day = 'AM';
