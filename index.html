@@ -11,7 +11,6 @@
     <div id='time'></div>
     
     <script type="text/javascript"> 
-    setInterval(clock, 1000); //calls function clock every 1000ms to update the time
     function clock(){ //creates the clock string literal
     let currentTime = new Date(); //creates Date object
     let hour = currentTime.getHours();
@@ -33,6 +32,8 @@
     let realTime = hour + ':' + minutes + ':' + seconds + night_day;
     document.getElementById('time').innerHTML = realTime;
     }
+    clock();
+    setInterval(clock, 1000); //calls function clock every 1000ms to update the time  
    </script>
     
 </body>
