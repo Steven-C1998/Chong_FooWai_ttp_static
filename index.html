@@ -17,19 +17,10 @@ function clock(){ //creates the time string literal
   let hour = currentTime.getHours();
   let minutes = currentTime.getMinutes();
   let seconds = currentTime.getSeconds();
-  let night_day = null;
-  if (hour == 0){
-      hour = 12;
-      night_day = 'AM';
-  }
-  if (hour > 12){
-      hour -= 12;
-      night_day = 'PM';
-  }
   hour = hour < 10 ? '0' + hour : hour;
   minutes = minutes < 10 ? '0' + minutes : minutes;
   seconds = seconds < 10 ? '0' + seconds :seconds;
-  let realTime = hour + ':' + minutes + ':' + seconds + night_day;
+  let realTime = hour + ':' + minutes + ':' + seconds;
   document.getElementById('time').innerHTML = realTime;
 }
 </script>
